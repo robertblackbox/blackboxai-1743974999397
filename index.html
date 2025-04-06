@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla – Electric Cars & Clean Energy</title>
+    <meta name="description" content="Tesla is accelerating the world's transition to sustainable energy with electric cars, solar and integrated renewable energy solutions for homes and businesses.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter">
+    <!-- Header -->
+    <header class="fixed w-full bg-transparent z-50 transition-all duration-300">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-white">TESLA</div>
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="text-white hover:text-gray-300 transition">Model S</a>
+                <a href="#" class="text-white hover:text-gray-300 transition">Model 3</a>
+                <a href="#" class="text-white hover:text-gray-300 transition">Model X</a>
+                <a href="#" class="text-white hover:text-gray-300 transition">Model Y</a>
+                <a href="#" class="text-white hover:text-gray-300 transition">Solar</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-white">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="hidden fixed inset-0 bg-black bg-opacity-90 z-40">
+        <div class="flex flex-col items-center justify-center h-full space-y-8">
+            <a href="#" class="text-white text-xl hover:text-gray-300 transition">Model S</a>
+            <a href="#" class="text-white text-xl hover:text-gray-300 transition">Model 3</a>
+            <a href="#" class="text-white text-xl hover:text-gray-300 transition">Model X</a>
+            <a href="#" class="text-white text-xl hover:text-gray-300 transition">Model Y</a>
+            <a href="#" class="text-white text-xl hover:text-gray-300 transition">Solar</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="h-screen relative bg-black">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=2000&q=80'); background-blend-mode: overlay;"></div>
+        <div class="absolute inset-0 bg-black opacity-20"></div>
+        <div class="relative h-full flex flex-col justify-center items-center text-center text-white px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">Experience the Future</h1>
+            <p class="text-xl md:text-2xl mb-8">Sustainable Energy for a Better Tomorrow</p>
+            <div class="space-x-4">
+                <a href="#" class="bg-white text-black px-8 py-3 rounded-full hover:bg-opacity-90 transition">Order Now</a>
+                <a href="#" class="bg-black bg-opacity-60 text-white px-8 py-3 rounded-full hover:bg-opacity-70 transition">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Models Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">Our Models</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Model S -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg transition transform hover:-translate-y-1">
+                    <img src="https://images.unsplash.com/photo-1620891549027-942fdc95d3f5?auto=format&fit=crop&w=800&q=80" 
+                         alt="Tesla Model S" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Model S</h3>
+                        <p class="text-gray-600">The ultimate in sustainable luxury</p>
+                        <a href="#" class="mt-4 inline-block text-blue-600 hover:text-blue-800">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Model 3 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg transition transform hover:-translate-y-1">
+                    <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=800&q=80" 
+                         alt="Tesla Model 3" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Model 3</h3>
+                        <p class="text-gray-600">Performance and value</p>
+                        <a href="#" class="mt-4 inline-block text-blue-600 hover:text-blue-800">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Model X -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg transition transform hover:-translate-y-1">
+                    <img src="https://images.unsplash.com/photo-1619867076286-38b9f1411c6e?auto=format&fit=crop&w=800&q=80" 
+                         alt="Tesla Model X" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Model X</h3>
+                        <p class="text-gray-600">Ultimate SUV experience</p>
+                        <a href="#" class="mt-4 inline-block text-blue-600 hover:text-blue-800">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Model Y -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg transition transform hover:-translate-y-1">
+                    <img src="https://images.unsplash.com/photo-1619867079397-50702389c6ae?auto=format&fit=crop&w=800&q=80" 
+                         alt="Tesla Model Y" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Model Y</h3>
+                        <p class="text-gray-600">Versatility meets performance</p>
+                        <a href="#" class="mt-4 inline-block text-blue-600 hover:text-blue-800">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Energy Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">Sustainable Energy Solutions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Solar Panels -->
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1000&q=80" 
+                         alt="Tesla Solar Panels" 
+                         class="w-full h-96 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <div class="absolute bottom-0 left-0 p-8 text-white">
+                        <h3 class="text-3xl font-bold mb-2">Solar Panels</h3>
+                        <p class="mb-4">Convert Sunlight to Energy</p>
+                        <a href="#" class="inline-block bg-white text-black px-6 py-2 rounded-full hover:bg-opacity-90 transition">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Powerwall -->
+                <div class="relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=1000&q=80" 
+                         alt="Tesla Powerwall" 
+                         class="w-full h-96 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <div class="absolute bottom-0 left-0 p-8 text-white">
+                        <h3 class="text-3xl font-bold mb-2">Powerwall</h3>
+                        <p class="mb-4">Store Energy for Later Use</p>
+                        <a href="#" class="inline-block bg-white text-black px-6 py-2 rounded-full hover:bg-opacity-90 transition">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="font-bold mb-4">Tesla</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray-300">About</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Careers</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Vehicles</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray-300">Model S</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Model 3</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Model X</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Model Y</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Energy</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray-300">Solar Panels</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Solar Roof</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Powerwall</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-youtube text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 text-center text-gray-400">
+                <p>&copy; 2024 Tesla Clone. This is a demo website for educational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
